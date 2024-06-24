@@ -1,0 +1,14 @@
+<suite name="Multi browser test" verbose="1" parallel="tests" thread-count="2">
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="positiveTests.LoginTests" priority="1"/>
+            <class name="negativeTests.NegLoginTests" priority="2"/>
+            <class name="positiveTests.CreateRoomTests" priority="3"/>
+            <class name="positiveTests.UpdateRoomTests" priority="4"/>
+            <class name="negativeTests.NegCreateRoomTests" priority="5"/>
+            <class name="negativeTests.NegUpdateRoomTests" priority="6"/>
+            <class name="negativeTests.NegDeleteRoomTests" priority="7"/>
+        </classes>
+    </test>
+</suite>
